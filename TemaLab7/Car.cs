@@ -47,7 +47,7 @@ namespace TemaLab7
             Console.WriteLine("The car starts...\n" );
             foreach (var door in doors)
             {
-                door.Open();
+                door.Close();
             }
             motor.StartMotor();
         }
@@ -58,7 +58,7 @@ namespace TemaLab7
             motor.StopMotor();
             foreach (var door in doors)
             {
-                door.Close();
+                door.Open();
             }
         }
     }
